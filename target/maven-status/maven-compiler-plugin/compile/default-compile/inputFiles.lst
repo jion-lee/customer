@@ -1,6 +1,6 @@
 C:\Users\SOPHIE\Desktop\Intensive2\pphoneseller\customer\src\main\java\phoneseller\config\kafka\KafkaProcessor.java
 C:\Users\SOPHIE\Desktop\Intensive2\pphoneseller\customer\src\main\java\phoneseller\Customer.java
-C:\Users\SOPHIE\Desktop\Intensive2\pphoneseller\customer\src\main\java\phoneseller\PromoCancelled.java
+C:\Users\SOPHIE\Desktop\Intensive2\pphoneseller\customer\src\main\java\phoneseller\GiftCancelled.java
 C:\Users\SOPHIE\Desktop\Intensive2\pphoneseller\customer\src\main\java\phoneseller\AbstractEvent.java
 C:\Users\SOPHIE\Desktop\Intensive2\pphoneseller\customer\src\main\java\phoneseller\CustomerRepository.java
 C:\Users\SOPHIE\Desktop\Intensive2\pphoneseller\customer\src\main\java\phoneseller\PayCompleted.java
@@ -11,4 +11,4 @@ C:\Users\SOPHIE\Desktop\Intensive2\pphoneseller\customer\src\main\java\phonesell
 C:\Users\SOPHIE\Desktop\Intensive2\pphoneseller\customer\src\main\java\phoneseller\OrderCancelled.java
 C:\Users\SOPHIE\Desktop\Intensive2\pphoneseller\customer\src\main\java\phoneseller\Shipped.java
 C:\Users\SOPHIE\Desktop\Intensive2\pphoneseller\customer\src\main\java\phoneseller\CustomerApplication.java
-C:\Users\SOPHIE\Desktop\Intensive2\pphoneseller\customer\src\main\java\phoneseller\PromoCompleted.java
+C:\Users\SOPHIE\Desktop\Intensive2\pphoneseller\customer\src\main\java\phoneseller\GiftCompleted.java

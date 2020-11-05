@@ -118,15 +118,15 @@ public class CustomerViewHandler {
     }
 
     @StreamListener(KafkaProcessor.INPUT)
-    public void whenPromoCompleted_then_UPDATE_5(@Payload PromoCompleted promoCompleted) {
-        System.out.println("update status promo completed");
+    public void whenGiftCompleted_then_UPDATE_5(@Payload GiftCompleted giftCompleted) {
+        System.out.println("update status gift completed");
         try {
-            if (promoCompleted.isMe()) {
+            if (giftCompleted.isMe()) {
                 // view 객체 조회
-                List<Customer> customerList = customerRepository.findByOrderId(promoCompleted.getOrderId());
+                List<Customer> customerList = customerRepository.findByOrderId(giftCompleted.getOrderId());
                 for(Customer customer : customerList){
                     // view 객체에 이벤트의 eventDirectValue 를 set 함
-                    customer.setPoint(promoCompleted.getPoint());
+                    customer.setPoint(giftCompleted.getPoint());
                     // view 레파지 토리에 save
                     customerRepository.save(customer);
 
@@ -137,15 +137,15 @@ public class CustomerViewHandler {
         }
     }
     @StreamListener(KafkaProcessor.INPUT)
-    public void whenPromoCancelled_then_UPDATE_6(@Payload PromoCancelled promoCancelled) {
-        System.out.println("update status promo cancelled");
+    public void whenGiftCancelled_then_UPDATE_6(@Payload GiftCancelled giftCancelled) {
+        System.out.println("update status gift cancelled");
         try {
-            if (promoCancelled.isMe()) {
+            if (giftCancelled.isMe()) {
                 // view 객체 조회
-                List<Customer> customerList = customerRepository.findByOrderId(promoCancelled.getOrderId());
+                List<Customer> customerList = customerRepository.findByOrderId(giftCancelled.getOrderId());
                 for(Customer customer : customerList){
                     // view 객체에 이벤트의 eventDirectValue 를 set 함
-                    customer.setPoint(promoCancelled.getPoint());
+                    customer.setPoint(giftCancelled.getPoint());
                     // view 레파지 토리에 save
                     customerRepository.save(customer);
 
